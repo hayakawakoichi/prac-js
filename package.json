@@ -1,0 +1,16 @@
+{
+  "name": "prac-js",
+  "private": true,
+  "version": "1.0.0",
+  "description": "this is a repository for freely experimenting with javascript and typescript.",
+  "author": "koichi hayakawa",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "canvas:start": "yarn workspace canvas start"
+  }
+}
