@@ -1,0 +1,18 @@
+{
+  "name": "fastify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^4.10.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsc -p tsconfig.json && node index.js"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.3",
+    "@types/node": "^18.11.9",
+    "typescript": "^4.9.3"
+  }
+}
