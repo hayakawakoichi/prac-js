@@ -1,4 +1,4 @@
-import { FastifyInstance, FastifyPluginOptions } from "fastify";
+import { FastifyInstance, FastifyPluginOptions } from 'fastify'
 
 /**
  * API router
@@ -7,11 +7,11 @@ import { FastifyInstance, FastifyPluginOptions } from "fastify";
  * @param option
  */
 export async function routes(fastify: FastifyInstance, option: FastifyPluginOptions) {
-    fastify.get("/", async (request, reply) => {
-        return "hello, fastify!";
-    });
+    fastify.get('/', async (request, reply) => {
+        return 'hello, fastify!'
+    })
 
-    fastify.get("/ping", async (request, reply) => {
-        return "pong\n";
-    });
+    fastify.get('/ping', async (request, reply) => {
+        return 'pong\n'
+    })
 }

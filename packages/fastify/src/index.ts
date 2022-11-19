@@ -2,10 +2,10 @@ import fastify from 'fastify'
 import { routes } from './route'
 
 const server = fastify({
-    logger: true
+    logger: true,
 })
 
-server.register(routes);
+server.register(routes)
 
 server.listen({ port: 9000 }, (err, address) => {
     if (err) {

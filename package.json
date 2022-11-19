@@ -12,6 +12,7 @@
   },
   "scripts": {
     "canvas:start": "yarn workspace canvas start",
-    "fastify:start": "yarn workspace fastify start"
+    "fastify:start": "yarn workspace fastify start",
+    "fastify:format": "yarn workspace fastify format"
   }
 }
