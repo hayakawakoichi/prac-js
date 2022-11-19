@@ -1,14 +1,11 @@
 import fastify from 'fastify'
+import { routes } from './route'
 
-const server = fastify()
-
-server.get('/',async (request, reply) => {
-    return 'hello, fastify!'
+const server = fastify({
+    logger: true
 })
 
-server.get('/ping', async (request, reply) => {
-    return "pong\n";
-})
+server.register(routes);
 
 server.listen({ port: 9000 }, (err, address) => {
     if (err) {
