@@ -11,6 +11,9 @@
     ]
   },
   "scripts": {
+    "next:dev": "yarn workspace next dev",
+    "next:format:fix": "yarn workspace next format:fix",
+    "next:lint:fix": "yarn workspace next lint:fix",
     "fastify:start": "yarn workspace fastify start",
     "fastify:format": "yarn workspace fastify format"
   }
