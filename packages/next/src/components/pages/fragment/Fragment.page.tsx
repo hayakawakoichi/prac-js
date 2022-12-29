@@ -1,10 +1,10 @@
-import { CodeBlock } from '@/components/code'
-import { Layout } from '@/components/layout'
-import { Box, Button, Typography } from '@mui/material'
 import { NextPage } from 'next'
 import { FC, Fragment, ReactNode, useMemo } from 'react'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+
+import { Box, Button, Typography } from '@mui/material'
+
+import { CodeBlock } from '@/components/code'
+import { Layout } from '@/components/layout'
 
 export const FragmentPage: NextPage = () => {
   return (
@@ -16,13 +16,19 @@ export const FragmentPage: NextPage = () => {
         }}
       >
         <Typography>
-          {`要素を<Fragment>で囲むと、単一の要素が必要な状況で、要素をグループ化することができます。`}
+          {
+            '要素を<Fragment>で囲むと、単一の要素が必要な状況で、要素をグループ化することができます。'
+          }
         </Typography>
         <Typography>
-          {`Fragmentで要素をグループ化しても、結果のDOMには何の影響も与えず、グループ化されていない場合と同じになります。`}
+          {
+            'Fragmentで要素をグループ化しても、結果のDOMには何の影響も与えず、グループ化されていない場合と同じになります。'
+          }
         </Typography>
         <Typography>
-          {`空のJSXタグ<></>は、ほとんどの場合<Fragment></Fragment>の略記です。`}
+          {
+            '空のJSXタグ<></>は、ほとんどの場合<Fragment></Fragment>の略記です。'
+          }
         </Typography>
       </Box>
 

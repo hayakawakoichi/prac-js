@@ -1,14 +1,18 @@
-import { NextPage, GetStaticProps } from 'next'
+import { NextPage } from 'next'
 
 import { Box } from '@mui/material'
+import Link from 'next/link'
 
 import { Layout } from '@/components/layout'
-import Link from 'next/link'
 
 const contents = [
   {
     path: '/react-docs/components/Fragment',
     title: 'Fragment',
+  },
+  {
+    path: '/react-docs/components/Profiler',
+    title: 'Profiler',
   },
 ]
 
@@ -22,9 +26,9 @@ export const TopPage: NextPage = () => {
         }}
       >
         {contents.map(({ path, title }) => (
-          <Link key={path} href={path}>
-            {title}
-          </Link>
+          <Box key={path}>
+            <Link href={path}>{title}</Link>
+          </Box>
         ))}
       </Box>
     </Layout>
