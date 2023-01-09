@@ -14,6 +14,10 @@ const contents = [
     path: '/react-docs/components/Profiler',
     title: 'Profiler',
   },
+  {
+    path: '/react-docs/components/Suspense',
+    title: 'Suspense',
+  },
 ]
 
 export const TopPage: NextPage = () => {

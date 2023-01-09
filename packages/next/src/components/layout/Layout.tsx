@@ -6,9 +6,10 @@ import Head from 'next/head'
 type LayoutProps = {
   title: string
   children: ReactNode
+  description?: string
 }
 
-export const Layout: FC<LayoutProps> = ({ title, children }) => {
+export const Layout: FC<LayoutProps> = ({ title, children, description }) => {
   return (
     <>
       <Head>
@@ -21,6 +22,7 @@ export const Layout: FC<LayoutProps> = ({ title, children }) => {
           }}
         >
           <Typography variant="h1">{title}</Typography>
+          <Typography variant="subtitle1">{description}</Typography>
         </Box>
         <Box sx={{ padding: 10 }}>{children}</Box>
       </Box>
